@@ -1,0 +1,111 @@
+body{
+  background-color: rgba(255, 171, 14, 0.811);
+  display: grid;
+  place-items: center;
+  height:100vh;
+  padding:24px;
+  font-size:16px;
+  font-family: Poppins,sans-serif;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+.card{
+  display:flex;
+  flex-wrap: wrap;
+  border-radius: 24px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  overflow:hidden;
+  max-width: clamp(320px,70vw,830px);
+  min-width: 320px;
+  min-height: 280px;
+}
+.card:hover{
+  box-shadow:rgba(0,0,0,0.75) 0px 5px 15px;
+}
+.background{
+  flex: 1 1 250px;
+}
+.background img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+.content{
+  flex: 3 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding:16px ;
+}
+.content > h2{
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight:700;
+  margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
+  color: black;
+}
+.content > p{
+  font-size: clamp(1rem, 1.75vw, 1.1rem);
+  font-weight:400;
+  margin: 6px 0;
+  color: black;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+}
+.content a{
+  color: #7370F4;
+}
+.blocks{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding:12px 0px 16px 0px;
+}
+.block{
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 15px;
+  transition: all 0.3s;
+  font-weight: 500;
+  display: inline;
+  font-style: italic;
+  background-color: #7370F4;
+  color: #EAEAEC;
+}
+.action-buttons{
+  display: inline-block;
+  padding-top:16px;
+  gap:12px;
+  display:flex;
+  margin-top: 2%;
+  flex-wrap: wrap;
+}
+.action-buttons a{
+  background-color:#7370F4;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 12px;
+  outline:none;
+  font-size: 18px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  flex: 1 0 240px;
+  max-width: 30%;
+  margin-left: 8%;
+}
+.action-buttons a:hover{
+  text-decoration: underline;
+  color: black;
+  background-color: #3d3afb;
+}
+.action-buttons a:active{
+  border:2px solid black;
+  color: black;
+  background-color: orange;
+}
